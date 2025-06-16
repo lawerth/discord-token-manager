@@ -1,0 +1,17 @@
+# Node.js bağımlılıkları
+node_modules/
+package-lock.json
+
+# Çıkış dosyaları / loglar
+*.log
+
+# IDE/editor ayarları
+.vscode/
+.idea/
+
+# Kayıtlı tokenler (özel veri!)
+tokens.json
+
+# Sistem dosyaları (Windows/macOS)
+.DS_Store
+Thumbs.db
