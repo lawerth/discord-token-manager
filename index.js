@@ -4,7 +4,6 @@ const readline = require('readline');
 const { Client } = require('discord.js-selfbot-v13');
 const { checkForUpdates } = require('./.version');
 
-// Token verisi
 let tokens = fs.existsSync('tokens.json') ? JSON.parse(fs.readFileSync('tokens.json')) : [];
 let activeClients = [];
 
@@ -117,6 +116,6 @@ async function mainMenu() {
 }
 
 (async () => {
-  await checkForUpdates();   // GitHub'dan sürüm kontrolü
-  await mainMenu();          // Menü sistemi başlasın
+  await checkForUpdates();
+  await mainMenu();
 })();
